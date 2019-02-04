@@ -2,8 +2,8 @@
 if [ $# -ne 1 ];
 then
     echo ""
-    echo "      > ERROR: Correct use: ./passwd [account] "
-    echo "      > FUNCTION: Copies account passwd to clipboard "
+    echo "      > ERROR: Correct use: ./$0 [account] "
+    echo "      > FUNCTION: Copies account's password to clipboard "
     echo ""
     exit 1
 else
@@ -24,7 +24,7 @@ else
 
     #desencripts encripted password file and saves it into a .txt file
     #ATTENTION: REPLACE desired PATHS according to where your encripted file is located and where you want your temporary desencripted file
-    openssl des3 -d -salt -in /Users/yourUser/psw_encripted.txt >> /Users/yourUser/psw_decripted.txt
+    openssl des3 -d -salt -in /Users/yourUserHere/psw_encripted.txt >> /Users/yourUserHere/psw_decripted.txt
     passwds_decripted="/Users/yourUser/psw_decripted.txt"
 
     #reads Line by Line of new desencripted passwords file, its line format is described as follows: account_name=username=password
