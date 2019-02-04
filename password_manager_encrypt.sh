@@ -33,7 +33,8 @@ else
     # decrypt existant encrypted passwords file
     openssl aes-256-cbc -d -salt -in "$passwds_encrypted" -out "$passwds_decrypted"
 
-    # add new account's credentials in decrypted file
+    # add new line + new account's credentials in decrypted file
+    echo
     echo "$account_name_to_save=$userName_to_save=$password_to_save" >> "$passwds_decrypted"
 
     # encrypts
