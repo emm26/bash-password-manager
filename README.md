@@ -1,6 +1,6 @@
 # bash_password_manager
 
-Using a UNIX terminal, this script allows you to manage a passwords encrypted text file by 2 main functions: adding new passwords(password_manager_encrypt) and getting existant passwords (password_manager_decrypt) and copying them to the clipboard. Both opperations are described in detail next. 
+Using a UNIX terminal, this script allows you to manage a passwords encrypted text file by 2 main functions: adding new passwords(password_manager_encrypt) and getting existent passwords (password_manager_decrypt) and copying them to the clipboard. Both opperations are described in detail next. 
 
 # password_manager_decrypt
 **password_manager_decrypt** does the following:
