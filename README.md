@@ -14,7 +14,7 @@ Using a UNIX terminal, this script allows you to manage a passwords encrypted te
 # password_manager_encrypt
  **password_manager_encrypt** does the following:
 
-  Given an account's name (for instance, "gmail"), its username and its password, decrypts the old encrypted passwords file (if existant, otherwise it creates it).
+  Given an account's name (for instance, "gmail"), its username and its password, decrypts the old encrypted passwords file (if existent, otherwise it creates it).
   
   Adds at the end of the resultant decrypted file the given account's details (name, username and password).
   
