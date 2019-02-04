@@ -1,6 +1,6 @@
 # bash_password_manager
 
-Using a UNIX terminal, this script allows you to manage a passwords encripted text file by 2 main functions: adding new passwords(password_manager_encrypt) and getting existant passwords (password_manager_decrypt). Both opperations are described in detail next. 
+Using a UNIX terminal, this script allows you to manage a passwords encripted text file by 2 main functions: adding new passwords(password_manager_encrypt) and getting existant passwords (password_manager_decrypt) and copying them to the clipboard. Both opperations are described in detail next. 
 
 # password_manager_decrypt
 **password_manager_decrypt** does the following:
@@ -14,14 +14,16 @@ Using a UNIX terminal, this script allows you to manage a passwords encripted te
 # password_manager_encrypt
  **password_manager_encrypt** does the following:
 
-  Given an account's name (for instance, "dropbox"), its username and its password, decrypts the old encrypted passwords file (if existant, otherwise it creates it).
+  Given an account's name (for instance, "gmail"), its username and its password, decrypts the old encrypted passwords file (if existant, otherwise it creates it).
   
   Adds at the end of the resultant decrypted file the given account's details (name, username and password).
   
   Then it encrypts the new decrypted file (which, again, contains new account's details).
  
 # Usage
-
+ **password_manager_decrypt**: ./password_manager_decrypt.sh [account] 
+ **password_manager_encrypt**: ./password_manager_encrypt.sh [accountName] [userName] [password]
+  
 # To consider
 
   1) Both scripts **delete the decrypted passwords file** as soon as is not anymore needed, for **security** purposes.
@@ -29,5 +31,3 @@ Using a UNIX terminal, this script allows you to manage a passwords encripted te
   2) Each line of the decrypted/plain passwords file must have the following **FORMAT**: "accountName=userName=password", **each field must be sepparated by the "=" token**.
   
   3) To encrypt the passwords text file it uses "openssl aes-256-cbc -salt -in /Users/yourUser/psw_decripted.txt >> /Users/yourUser/psw_encripted.txt" (Replace the PATHS as you wish, as well as the encryption algorithm), set your own encription password which will be requested to decript when you run the script.
-  
-  4) 
