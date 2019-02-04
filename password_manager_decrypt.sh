@@ -7,7 +7,7 @@ then
     echo ""
     exit 1
 else
-    # animation - {delete this block for fastest response time}
+    #animation - {delete this block for fastest response time}
         echo ""
         echo -ne 'LOADING: ##########                          (33%)\r'
         sleep .40
@@ -15,7 +15,7 @@ else
         sleep .40
         echo -ne 'LOADING: ##############################      (100%)\r'
         echo -ne '\n'
-    # end of animation
+    #end of animation
 
     account_to_find=$1
     #converts $1 to lowercase - as all accounts will have the 'account_name' attribute defined in lowercase format
