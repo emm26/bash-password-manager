@@ -27,8 +27,8 @@ else
 
     # ATTENTION: REPLACE desired PATHS according to where your encrypted file is 
     # located and where you want your temporary decrypted file
-    passwds_decrypted="/Users/edgarmoreno/psw_decrypted.txt"
-    passwds_encrypted="/Users/edgarmoreno/psw_encrypted.bin"
+    passwds_decrypted="/Users/yourUserHere/psw_decrypted.txt"
+    passwds_encrypted="/Users/yourUserHere/psw_encrypted.bin"
 
     # decrypt existant encrypted passwords file
     openssl aes-256-cbc -d -salt -in "$passwds_encrypted" -out "$passwds_decrypted"
