@@ -35,6 +35,8 @@ else
 
         if [[ $account_to_find = $current_account ]];
         then
+            #removes decripted password .txt file - security purposes
+            rm "/Users/yourUser/psw_decripted.txt"
             echo "      > Account found: $current_account"
             current_username="${current#*=}"
             current_username="${current_username%%=*}"
@@ -44,8 +46,6 @@ else
             echo "$current_passwd" | pbcopy
             echo "      > Password succesfully copied to clipboard"
             echo ""
-            #removes decripted password .txt file - security purposes
-            rm "/Users/edgarmoreno/Dropbox/DOCS/psw_decripted.txt"
             exit 0
         fi
     done <"$passwds_decripted"
