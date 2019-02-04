@@ -29,6 +29,6 @@ Using a UNIX terminal, this script allows you to manage a passwords encrypted te
 
   1) Both scripts **delete the decrypted passwords file** as soon as is not anymore needed, for **security** purposes.
 
-  2) Each line of the decrypted/plain passwords file must have the following **FORMAT**: "accountName=userName=password", **each field must be sepparated by the "=" token**.
+  2) Each line of the decrypted/plain passwords file must have the following **FORMAT**: "accountName=userName=password", **each field must be separated by the "=" token**.
   
-  3) To encrypt the passwords text file it uses "openssl aes-256-cbc -salt -in /Users/yourUser/psw_decripted.txt >> /Users/yourUser/psw_encripted.txt" (Replace the PATHS as you wish, as well as the encryption algorithm), set your own encription password which will be requested to decript when you run the script.
+  3) To encrypt the passwords text file it uses "openssl aes-256-cbc -salt -in /Users/yourUser/psw_decripted.txt >> /Users/yourUser/psw_encripted.txt" (Replace the PATHS as you wish, as well as the encryption algorithm), set your own encryption password which will be requested to decrypt when you run the script.
