@@ -10,7 +10,5 @@ The script deletes the decrypted passwords file aftwerwards for security purpose
 
 ******************************************************************************************************************************
 
-NOTICE:
-
   1) EACH LINE OF THE PASSWORDS FILE MUST HAVE THE FOLLOWING FORMAT: "accountName=userName=password", each field must be sepparated by the "=" token.
   2) TO ENCRYPT THE PASSWORDS TEXT FILE USE "openssl des3 -salt -in /Users/yourUser/psw_decripted.txt >> /Users/yourUser/psw_encripted.txt" (Replace the PATHS as you wish), set your own encription password which will be requested to decript when you run the script.
