@@ -57,7 +57,6 @@ else
     done <"$passwds_decrypted"
 
     # removes decrypted password .txt file - security purposes
-    # ATTENTION: REPLACE PATH according to where your decrypted file was placed
     rm "$passwds_decrypted"
     echo "      > ERROR: No password found"
     echo ""
