@@ -21,7 +21,7 @@ Using a UNIX terminal, this script allows you to manage a passwords encripted te
   Then it encrypts the new decrypted file (which, again, contains new account's details).
  
 # Usage
- **password_manager_decrypt**: ./password_manager_decrypt.sh [account]
+ **password_manager_decrypt**: ./password_manager_decrypt.sh [accountName]
  
  **password_manager_encrypt**: ./password_manager_encrypt.sh [accountName] [userName] [password]
   
