@@ -27,7 +27,7 @@ Using a UNIX terminal, the following scripts will allow you to manage a password
   
 # to consider
 
-  1) Both scripts **delete the decrypted passwords file** as soon as is not anymore needed, for **security** purposes.
+  1) Both scripts **delete the decrypted passwords file** as soon as is not needed anymore, for **security** purposes.
 
   2) Each line of the decrypted/plain passwords file must have the following **FORMAT**: "accountName=userName=password", **each field must be separated by the "=" token**.
   
