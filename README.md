@@ -32,3 +32,5 @@ Using a UNIX terminal, the following scripts will allow you to manage a password
   2) Each line of the decrypted/plain passwords file must have the following **FORMAT**: "accountName=userName=password", **each field must be separated by the "=" token**.
   
   3) To encrypt the passwords text file it uses "openssl aes-256-cbc -salt -in /Users/yourUser/psw_decripted.txt >> /Users/yourUser/psw_encripted.txt" (Replace the PATHS as you wish, as well as the encryption algorithm), set your own encryption password which will be requested to decrypt when you run the script.
+  
+  4) A future operation to add to the script could be modifiyng existing usernames and/or passwords.
